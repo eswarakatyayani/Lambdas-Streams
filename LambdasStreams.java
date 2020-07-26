@@ -21,14 +21,9 @@ public class LambdasStreams
 	public static void main(String args[]) 
 	{ 
 		String strArray[]={"america","arc","atlantic","india","madam","malayalam","add","ace","madam","malayalam","tit","tat"};
-                List<Integer> list1=new ArrayList<>();
+                List<Integer> list1=Arrays.asList(1,2,3,4,5,6);     
 		List<String> list = Arrays.asList(strArray); 
-                list1.add(1);
-		list1.add(2);
-		list1.add(3);
-		list1.add(4);
-	        list1.add(5);
-	    
+        
 	        average(list1);
                 System.out.print("string which strats with 'a' and have length as 3 are:")
 		System.out.println(lowercase_a(list,(String str) -> str.startsWith("a") && str.length()==3 ));
