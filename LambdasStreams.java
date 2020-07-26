@@ -16,7 +16,7 @@ class Palindrome
 	}
 }
 
-public class Main
+public class LambdasStreams
 { 
 	public static void main(String args[]) 
 	{ 
