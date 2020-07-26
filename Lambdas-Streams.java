@@ -39,11 +39,11 @@ public class Main
 
               public static void average(List<Integer> list1)
 		{
-                                              int sum=0;
-                                              for(int i:list1)
-                                              sum+=i;
-                                              System.out.print("Average of the list is:");
-                                              System.out.println(sum/(list1.size()));   
+                    int sum=0;
+                    for(int i:list1)
+                        sum+=i;
+                    System.out.print("Average of the list is:");
+                    System.out.println(sum/(list1.size()));   
 		}
 
 		public static List<String> lowercase_a(List<String> list,Predicate<String> predicate)
