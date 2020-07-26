@@ -9,11 +9,10 @@ class Palindrome
 	   public static boolean ispal(String s)
 	   {
 	       String reverse = new StringBuffer(s).reverse().toString();
-	if (s.equals(reverse))
-	return true;
-	 
-	else
-	return false;
+	      if (s.equals(reverse))
+	      return true;
+	      else
+	      return false;
 	}
 }
 
@@ -22,28 +21,28 @@ public class Main
 	public static void main(String args[]) 
 	{ 
 		String strArray[]={"america","arc","atlantic","india","madam","malayalam","add","ace","madam","malayalam","tit","tat"};
-                                          List<Integer> list1=new ArrayList<>();
+                List<Integer> list1=new ArrayList<>();
 		List<String> list = Arrays.asList(strArray); 
-                                          list1.add(1);
+                list1.add(1);
 		list1.add(2);
 		list1.add(3);
 		list1.add(4);
-	                     list1.add(5);
+	        list1.add(5);
 	    
-	                     average(list1);
-                                           System.out.print("string which strats with 'a' and have length as 3 are:")
+	        average(list1);
+                System.out.print("string which strats with 'a' and have length as 3 are:")
 		System.out.println(lowercase_a(list,(String str) -> str.startsWith("a") && str.length()==3 ));
-                                           System.out.print("Palindrome in the given String list are:")
-                                          System.out.println(lower(list ,Palindrome::ispal));
+                System.out.print("Palindrome in the given String list are:")
+                System.out.println(lower(list ,Palindrome::ispal));
 	}
 		
 
-                                         public static void average(List<Integer> list1)
+              public static void average(List<Integer> list1)
 		{
                                               int sum=0;
                                               for(int i:list1)
-                                                     sum+=i;
-                                               System.out.print("Average of the list is:");
+                                              sum+=i;
+                                              System.out.print("Average of the list is:");
                                               System.out.println(sum/(list1.size()));   
 		}
 
@@ -58,7 +57,7 @@ public class Main
 		       return (list2);  
 		}
 
-                                        public static List<String> lower(List<String> list,Predicate<String> predicate)
+               public static List<String> lower(List<String> list,Predicate<String> predicate)
 		{
 		      List<String> list3=new ArrayList<>();
 
